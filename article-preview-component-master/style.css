@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Manrope", sans-serif;
+    font-optical-sizing: auto;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+}
+
+p {
+    font-size: 13px;
+    margin-top: 10px;
+    color: hsl(214, 17%, 51%);
+    font-weight: 500;
+}
+
+.main-card {
+    display: flex;
+    max-width: 700px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.table-img {
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-size: auto;
+}
+
+.michelle {
+    height: 50px;
+    border-radius: 50%;
+}
+
+.info {
+    padding: 30px;
+}
+
+.profile {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.date {
+    margin-top: -5px;
+}
+
+.pro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    margin-left: 10px;
+}
+
+h4 {
+    color: hsl(217, 19%, 35%);
+}
+
+.share {
+    background-color: hsl(217, 19%, 35%);
+    padding: 10px;
+    border-radius: 50%;
+    height: 15px;
+    cursor: pointer;
+}
+
+.share-compo {
+    background-color: hsl(217, 19%, 35%);
+    font-size: 15px;
+    display: flex;
+    padding: 13px 30px;
+    border-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(213, 18%, 67%);
+    font-weight: 600;
+    position: relative;
+    /* Important for the absolute positioning of the triangle */
+    margin-bottom: 20px;
+    /* Add some margin to ensure the triangle has space */
+    left: 300px;
+    top: -170px;
+    display: none;
+}
+
+.share-compo::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    /* Places the triangle below the main container */
+    left: 50%;
+    /* Centers the triangle horizontally */
+    transform: translateX(-50%);
+    /* Centers it accurately */
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid hsl(217, 19%, 35%);
+    /* This creates the triangle pointing downward */
+}
+
+.share-compo span img {
+    margin-left: 5px;
+}
+
+@media (max-width:1627px) {
+    .share-compo {
+        left: 10;
+    }
+}
+
+@media (max-width:428px) {
+    .main-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 350px;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    .table-img {
+        background-image: url("");
+        height: 280px;
+        border-top-left-radius: 15px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 15px;
+    }
+
+    .share-compo {
+        left: 0;
+        width: 290px;
+        position: relative;
+        top: -85px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        padding: 30px 30px 30px 30px;
+       
+    }
+
+    .share-compo::after {
+        display: none;
+    }
+    .share{
+        position: relative;
+        z-index: 10;
+        background-color: grey;
+    }
+    .info{
+        padding: 20px;
+    }
+}
