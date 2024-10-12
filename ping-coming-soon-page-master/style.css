@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    font-family: "Libre Franklin", sans-serif;
+    font-optical-sizing: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    gap: 20px;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+h1{
+    font-size: 50px;
+    color: hsl(209, 33%, 12%);
+}
+p{
+    color: hsl(209, 33%, 12%);
+    font-weight: 500;
+}
+
+.h1-span{
+    color:hsl(0, 0%, 59%) ;
+    font-weight: 500;
+}
+.input{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+input{
+    width: 350px;
+    padding: 15px;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid hsl(0, 0%, 59%);
+}
+button{
+    padding: 15px 35px;
+    border: none;
+    border-radius: 20px;
+    background-color: hsl(223, 87%, 63%);
+    color: white;
+    font-weight: bold;
+}
+button:hover{
+    background-color: hsl(223, 100%, 88%);
+    cursor: pointer;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    
+}
+a img:hover{
+    cursor: pointer;
+    filter: invert(1);
+
+}
+.footer{
+    color: hsl(0, 0%, 59%);
+   
+}
+.error{
+    display:none;
+   position: relative;
+   justify-content: flex-start;
+}
+@media (max-width:960px){
+    .img{
+        height: 400px;
+    }
+}
+@media (max-width:768px){
+    .img{
+        height: 300px;
+    }
+}
+@media (max-width:500px){
+    .img{
+        height: 200px;
+    }
+    button{
+        margin-top: 10px;
+        width:43vh;
+    }
+    input{
+        width: 40vh;
+    }
+}
