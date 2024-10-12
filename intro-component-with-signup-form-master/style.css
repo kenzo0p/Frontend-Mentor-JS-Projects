@@ -1,0 +1,134 @@
+*{
+    margin:0;
+    padding: 0;
+}
+body{
+    background-image:url(images/bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.hero{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+h1{
+    font-weight: 900;
+    font-size: 40px;
+}
+.first{
+    width:300px;
+}
+p{
+    margin-top: 20px;
+}
+.second{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+input{
+    width: 312px;
+    padding: 10px 15px;
+    outline-color: hsl(249, 10%, 26%);
+    border-radius: 10px;
+    border:1px solid hsl(246, 25%, 77%);
+}
+.foot-col{
+    color: hsl(246, 25%, 77%);
+}
+.span{
+    display:none;
+    justify-content: flex-end;
+}
+.error{
+    display:none;
+    position: relative;
+    top: -30px;
+    left: 300px;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: white;
+    padding: 40px 30px 30px 40px;
+    border-radius: 10px;
+}
+.try-it{
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    padding: 10px;
+    width:40vh;
+    border-radius: 10px;
+    align-self: center;
+    box-shadow:2px 2px 2px 2px rgb(122, 121, 121);
+}
+button{
+    text-align: center;
+    width: 350px;
+    padding: 15px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    font-weight: 600;
+}
+.foot-col{
+    margin-top: -10px;
+    font-size: 10px;
+}
+
+@media (max-width:430px){
+    body{
+        background-image: url("images/bg-intro-mobile.png");
+        align-items: center;
+        justify-content: center;
+        background-position: center center;
+    }
+    .hero{
+        flex-direction: column;
+        gap: 20px;
+        
+    }
+    input{
+        width: 40vh;
+    }
+    .form{
+        padding: 30px 15px;
+    }
+    button{
+        width: 45vh;
+    }
+}
+@media (max-width:800px){
+    .second{
+        padding:0;
+    }
+    .hero{
+        padding: 20px;
+    }
+}
+@media (max-width:755px){
+    .second{
+        padding:0;
+    }
+    .hero{
+        padding: 20px;
+    }
+    .hero{
+        flex-direction: column;
+    }
+    .second{
+        margin: 30px;
+    }
+}
